@@ -200,7 +200,7 @@ catch (error) {
 // console.log(car == 'subaru')
 // • Look closely at your results, and make sure you understand why each line evaluates to True or False.
 // • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
-let num1 = 5, num2 = 6, str1 = "Pakistan", str2 = "pakistan";
+let num1 = 5, num2 = 6, str1 = "Pakistan", str2 = "pakistan", add = num1 + num2;
 console.log("Is num1 =num2? I predict false");
 console.log(num1 == num2);
 console.log("Is str1=Paksitan? I predict fasle");
@@ -219,3 +219,5 @@ console.log("Is num1=5? I predict true");
 console.log(num1 == 5);
 console.log("Is num2==6? I predict true");
 console.log(num2 == 6);
+console.log("Is add>10? I predict true");
+console.log(add > 10);
