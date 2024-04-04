@@ -153,7 +153,7 @@ else {
 }
 // Instructions: Write a program that prints the multiplication table of a given number up to 10.
 console.log("16. Multiplication Table");
-number1 = Number(prompt("Which times table do you want to see? choose from 1 to 10"));
+number1 = Number(prompt("Which times table do you want to see? choose from 1 to 10:"));
 for (let i = 1; i <= 10; ++i) {
     console.log(`${number1} * ${i} = ${number1 * i}`);
 }
