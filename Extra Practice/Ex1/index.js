@@ -187,12 +187,8 @@ let Rivers = {
 };
 console.log("Customized object", Rivers.Bahawalpur, Rivers.JalandharDistrict, Rivers.Lahore);
 // Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program
-try {
-    console.log(favPeople[4]);
-}
-catch (error) {
-    console.log("Out of index");
-}
+let arr = [1, 2, 3];
+console.log(arr[4]);
 // //23
 // Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
 // let car = 'subaru';

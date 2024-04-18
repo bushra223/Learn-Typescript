@@ -11,6 +11,7 @@ console.log("2. Basic Math");
 //
 //Instructions: Define two variables with integer values and calculate their sum, difference, product, and quotient.
 
+
 let num1, num2: number; // Assign integer values and perform arithmetic operations.
 num1 = 5;
 num2 = 7;
