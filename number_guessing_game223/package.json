@@ -1,0 +1,33 @@
+{
+	"dependencies": {
+		"inquirer": "^9.2.19"
+	},
+	"name": "@batch57piaic/number_guessing_game223",
+	"description": "cli number guessing game using inquirer",
+	"version": "1.0.7",
+	"main": "index.js",
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@batch57piaic/number_guessing_game223": "^1.0.7",
+		"@types/inquirer": "^9.0.7"
+	},
+	"type": "module",
+	"bin": {
+		"number_guessing_game223": "index.js"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bushra223/number_guessing_game223.git"
+	},
+	"author": "Bushra",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bushra223/number_guessing_game223/issues"
+	},
+	"homepage": "https://github.com/bushra223/number_guessing_game223#readme"
+}
