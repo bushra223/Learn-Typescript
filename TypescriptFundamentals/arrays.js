@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Write a function that takes an array of words and returns a new array containing only the words that start with the letter 'a'.
 function findWords(arr) {
     let newArr = [];
@@ -107,3 +105,4 @@ function findSmallest2(arr) {
     return smallest;
 }
 console.log("smallest number in [4,5,6,3,2,0,-1] is:", findSmallest2([4, 5, 6, 3, 2, 0, -1]));
+export {};

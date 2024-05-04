@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Write a function calculateProduct that takes an array of numbers and returns the product of all elements
 function calculateProducts(arr) {
     let product = 1; //so that array should not be zero when multiplied;
@@ -123,3 +121,4 @@ function swapElements(arr, index1, index2) {
     return arr;
 }
 console.log(swapElements([7, 6, 4, 90, 0, 9, 6, 5, 4, 3], 3, 0));
+export {};

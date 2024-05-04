@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Write a script to log "Hello, World!" to the console.
 console.log("Hello, World!");
 // Create a variable temperature and assign it a value. Then log "It's cold!" if the temperature is below 20 degrees Celsius.
@@ -18,3 +16,4 @@ if (num > 5)
     console.log("yes");
 else
     console.log("no");
+export {};

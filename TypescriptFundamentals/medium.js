@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Create a function calculateArea that takes the radius of a circle as an input and returns the area of the circle.
 function calculateArea(radius) {
     return 3.14 * Math.sqrt(radius);
@@ -38,3 +36,4 @@ function findPositives(arr) {
     return count;
 }
 console.log(findPositives(temperature));
+export {};
