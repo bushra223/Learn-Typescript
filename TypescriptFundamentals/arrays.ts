@@ -5,9 +5,12 @@ function findWords(arr: string[]): string[] {
 		if (arr[i].charAt(0) == "a" || arr[i].charAt(0) == "A") newArr.push(arr[i]);
 	}
 	return newArr;
+	//using built-in function
+	// let tempArray = arr.filter((element) => element.charAt(0) == "a");
+	// return tempArray;
 }
 let words = ["bushra", "anas", "bilal", "attique", "hafsa", "mamoona"];
-console.log(findWords(words));
+console.log("Function findWords() called:", findWords(words));
 
 // Create a script that logs the second to last element of an array named fruits.
 let fruits: string[] = ["apple", "banana", "grapes", "kiwi"];
@@ -50,6 +53,17 @@ function countMinMax(arr: number[]) {
 	console.log(
 		`The score exceeded from the max score(20)= ${maxCount} times and it fell below the minimum score(5) = ${minCount} times`
 	);
+	//using built in function
+	// console.log(
+	// 	`The score exceeded from the max score(20) ${
+	// 		arr.filter((element) => element > maxScore).length
+	// 	} times`
+	// );
+	// console.log(
+	// 	`The score fell below the min score(5) ${
+	// 		arr.filter((element) => element < minScore).length
+	// 	} times`
+	// );
 }
 countMinMax([10, 5, 20, 20, 4, 5, 2, 25, 1]);
 // Create a function that removes all falsey values from an array. Falsy values include false, null, 0, "", undefined, and NaN.
@@ -57,7 +71,7 @@ countMinMax([10, 5, 20, 20, 4, 5, 2, 25, 1]);
 //method 1
 function removeFalsyValues(arr: any[]): any[] {
 	for (let i = 0; i < arr.length; ++i) {
-		//typecasting of boolean will give always true except for false,undefined,Nan,0 or empty string
+		//typecasting of boolean will always give true except for false,undefined,Nan,0 or empty string
 
 		if (!Boolean(arr[i])) {
 			arr.splice(i, 1);
@@ -65,15 +79,15 @@ function removeFalsyValues(arr: any[]): any[] {
 		}
 	}
 	return arr;
+	//using builtin method
+	//return arr.filter((element) => Boolean(element) == true);
+	//or
+	//return arr.filter((x) => x);
 }
 
 console.log(
 	removeFalsyValues([1, 2, 3, 0, false, true, undefined, "bushra", NaN])
 );
-
-//method 2
-let arr = [1, 2, 3, 0, false, true, undefined, "bushra", NaN, ""];
-console.log(arr.filter((x) => x));
 
 // Write a script that concatenates two arrays [1, 2, 3] and [4, 5, 6] into a single array.
 let arr1: number[] = [1, 2, 3],

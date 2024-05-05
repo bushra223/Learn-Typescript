@@ -1,21 +1,21 @@
 {
-  "dependencies": {
-    "inquirer": "^9.2.20"
-  },
-  "type": "module",
-  "name": "typescriptfundamentals",
-  "version": "1.0.0",
-  "main": "arrays.js",
-  "devDependencies": {
-    "@types/inquirer": "^9.0.7",
-    "i": "^0.3.7",
-    "npm": "^10.7.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+	"name": "typescriptfundamentals",
+	"version": "1.0.0",
+	"main": "hard.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"inquirer": "^9.2.20"
+	},
+	"devDependencies": {
+		"@types/inquirer": "^9.0.7",
+		"i": "^0.3.7",
+		"npm": "^10.7.0"
+	}
 }

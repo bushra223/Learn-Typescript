@@ -13,8 +13,10 @@ function filterByLength(arr, n) {
         if (arr[i].length > n)
             tempArr.push(arr[i]);
     return tempArr;
+    // //using built-in function
+    //return arr.filter((element) => element.length > n);
 }
-console.log(`\n\t\tfilterBylength on array [apple,banana,grapes,kiwi,avocado,pomegranate,pear,peach,mango] ,n=4 :  ${filterByLength([
+console.log(`\nfilterBylength on array [apple,banana,grapes,kiwi,avocado,pomegranate,pear,peach,mango] ,n=5 :  ${filterByLength([
     "apple",
     "banana",
     "grapes",
@@ -24,7 +26,7 @@ console.log(`\n\t\tfilterBylength on array [apple,banana,grapes,kiwi,avocado,pom
     "pear",
     "peach",
     "mango",
-], 4)}`);
+], 5)}`);
 // Create a function findDuplicates that finds and logs all duplicates in an array.
 function findDuplicates(arr) {
     //arrTemp keeps record of all the indices of dulicate items in arr
@@ -44,7 +46,7 @@ function findDuplicates(arr) {
                         console.log(arr[i], "at index", i);
                     }
                 }
-                //below code is to push all the reaining indices of duplicate items that for loop with j counter traverse
+                //below code is to push all the remaining indices of duplicate items that for loop with j counter traverse
                 if (!arrTemp.includes(j)) {
                     arrTemp.push(j);
                     console.log(arr[j], "at index", j);
@@ -56,22 +58,17 @@ function findDuplicates(arr) {
 findDuplicates([1, 7, 1, 3, 2, 4, 7, 7]);
 // Write a function incrementAll that takes an array of integers and increments each element by one.
 function incrementAll(arr) {
-    for (let i = 0; i < arr.length; ++i)
-        ++arr[i];
-    return arr;
+    return arr.map((element) => (element += 1));
 }
 console.log("incrementing each element in [4, 0, 2, 4, -1]=", incrementAll([4, 0, 2, 4, -1]));
 // Develop a function countOccurrences that counts how many times a specific element appears in an array.
-function calculateCount(arr, element1) {
-    const isElement = (element2) => element2 === element1;
-    const result = arr.filter(isElement);
-    return result.length;
+function countOccurrences(arr, element1) {
+    return arr.filter((element) => element == element1).length;
 }
-console.log(`calculateCount([3, 1,4, 2, 1, 6, 7, 7, 1, 2],1 )=count : ${calculateCount([3, 1, 4, 2, 1, 6, 7, 7, 1, 2], 1)}`);
+console.log(`countOccurrences([3, 1,4, 2, 1, 6, 7, 7, 1, 2],1 )=count : ${countOccurrences([3, 1, 4, 2, 1, 6, 7, 7, 1, 2], 1)}`);
 // Create a function isSorted that checks if an array is sorted in ascending order.
 function isSorted(arr) {
     let flag = true;
-    console.log(typeof arr);
     for (let i = 0; i < arr.length - 1; ++i) {
         if (arr[i + 1] < arr[i])
             flag = false;
@@ -93,10 +90,7 @@ function formatNames(arr) {
 console.log(formatNames(["Anas", "Attique", "Bushra", "Bilal"]));
 // Develop a function that converts an array of Fahrenheit temperatures to Celsius and logs the new temperatures.
 function FahrenheitToCelsius(arr) {
-    arr.forEach((element, index) => {
-        arr[index] = Number(((element - 32) * (5 / 9)).toFixed(2));
-    });
-    console.log(arr);
+    console.log(arr.map((element) => (element = Number(((element - 32) * (5 / 9)).toFixed(2)))));
 }
 FahrenheitToCelsius([37, 98.6, 100, 101, 102]);
 function minMaxAverage(arr) {
@@ -121,4 +115,7 @@ function swapElements(arr, index1, index2) {
     return arr;
 }
 console.log(swapElements([7, 6, 4, 90, 0, 9, 6, 5, 4, 3], 3, 0));
+let fname = {};
+fname = 56;
+console.log(fname);
 export {};
