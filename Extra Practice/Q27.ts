@@ -7,30 +7,30 @@ console.log("Ex # 27");
 console.log("Version 1,green");
 
 //version 1
-let alien_color = "green";
-if (alien_color_q25 == "green")
+let alien_color_q27 = "green";
+if (alien_color_q27 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
-else if (alien_color_q25 == "yellow")
+else if (alien_color_q27 == "yellow")
 	console.log("The player has just earned 10 points!");
-else if (alien_color_q25 == "red")
+else if (alien_color_q27 == "red")
 	console.log("The player has just earned 15 points!");
 
 //version 2
 console.log("Version 2,yellow");
-alien_color_q25 = "yellow";
-if (alien_color_q25 == "green")
+alien_color_q27 = "yellow";
+if (alien_color_q27 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
-else if (alien_color_q25 == "yellow")
+else if (alien_color_q27 == "yellow")
 	console.log("The player has just earned 10 points!");
-else if (alien_color_q25 == "red")
+else if (alien_color_q27 == "red")
 	console.log("The player has just earned 15 points!");
 
 //version 3
 console.log("Version 3,red");
-alien_color_q25 = "red";
-if (alien_color_q25 == "green")
+alien_color_q27 = "red";
+if (alien_color_q27 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
-else if (alien_color_q25 == "yellow")
+else if (alien_color_q27 == "yellow")
 	console.log("The player has just earned 10 points!");
-else if (alien_color_q25 == "red")
+else if (alien_color_q27 == "red")
 	console.log("The player has just earned 15 points!");

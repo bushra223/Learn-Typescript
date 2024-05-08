@@ -18,10 +18,10 @@ console.log("Is num1 =num2? I predict false");
 console.log(num1_q23 == num2_q23);
 
 console.log("Is str1=Paksitan? I predict fasle");
-console.log(str1 == "pakistan");
+console.log(str1_q23 == "pakistan");
 
 console.log("Is str1=Paksitan? I predict true");
-console.log(str1 == "Pakistan");
+console.log(str1_q23 == "Pakistan");
 
 console.log("Is str2=Paksitan? I predict fasle");
 console.log(str2_q23 == "Pakistan");
