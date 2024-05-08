@@ -5,26 +5,26 @@ let str1 = "Pakistan",
 	num2 = 6;
 // • Tests for equality and inequality with strings
 console.log("Is str1 =str2? I predict false");
-console.log(str1 == str2);
+console.log(str1 == str2_q23);
 
 console.log("Is str1 != str2? I predict true");
-console.log(str1 != str2);
+console.log(str1 != str2_q23);
 
 // • Tests using the lower case function
 console.log(
 	"Is str1 = str2 after converting both to same case? I predict true"
 );
-console.log(str1.toLowerCase() == str2.toLowerCase());
+console.log(str1.toLowerCase() == str2_q23.toLowerCase());
 
 // • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
 
 //already done in ex number 23
 
 // • Tests using "and" and "or" operators
-if (num1 + num2 > 10 && num1 + num2 < 20)
+if (num1_q23 + num2_q23 > 10 && num1_q23 + num2_q23 < 20)
 	console.log("sum of number 1 and number 2 lies between 10 and 20");
 
-if (num1 + num2 > 10 || num1 + num2 < 20)
+if (num1_q23 + num2_q23 > 10 || num1_q23 + num2_q23 < 20)
 	console.log("sum of number 1 and number 2 is greater than 10");
 
 // • Test whether an item is in a array
@@ -43,11 +43,11 @@ if (languages.includes("English")) console.log("Item is in the array");
 console.log("Exercise # 25");
 
 let alien_color = "green";
-if (alien_color == "green") console.log("Player has just earned 5 points!");
+if (alien_color_q25 == "green") console.log("Player has just earned 5 points!");
 
 //version 2
-alien_color = "red";
-if (alien_color == "green") console.log("Player has just earned 5 points!");
+alien_color_q25 = "red";
+if (alien_color_q25 == "green") console.log("Player has just earned 5 points!");
 
 console.log("Exercise # 26");
 // Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
@@ -55,13 +55,13 @@ console.log("Exercise # 26");
 // • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
 // • Write one version of this program that runs the if block and another that runs the else block.
 //version 1
-alien_color = "green";
-if (alien_color == "green")
+alien_color_q25 = "green";
+if (alien_color_q25 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
 else console.log("The player has just earned 10 points!");
 //version 2
-alien_color = "yellow";
-if (alien_color == "green")
+alien_color_q25 = "yellow";
+if (alien_color_q25 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
 else console.log("The player has just earned 10 points!");
 
@@ -73,30 +73,30 @@ console.log("Ex # 27");
 // • Write three versions of this program, making sure each message is printed for the appropriate color alien.
 
 //version 1
-alien_color = "green";
-if (alien_color == "green")
+alien_color_q25 = "green";
+if (alien_color_q25 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
-else if (alien_color == "yellow")
+else if (alien_color_q25 == "yellow")
 	console.log("The player has just earned 10 points!");
-else if (alien_color == "red")
+else if (alien_color_q25 == "red")
 	console.log("The player has just earned 15 points!");
 
 //version 2
-alien_color = "yellow";
-if (alien_color == "green")
+alien_color_q25 = "yellow";
+if (alien_color_q25 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
-else if (alien_color == "yellow")
+else if (alien_color_q25 == "yellow")
 	console.log("The player has just earned 10 points!");
-else if (alien_color == "red")
+else if (alien_color_q25 == "red")
 	console.log("The player has just earned 15 points!");
 
 //version 3
-alien_color = "red";
-if (alien_color == "green")
+alien_color_q25 = "red";
+if (alien_color_q25 == "green")
 	console.log("Player has just earned 5 points for shooting the alien!");
-else if (alien_color == "yellow")
+else if (alien_color_q25 == "yellow")
 	console.log("The player has just earned 10 points!");
-else if (alien_color == "red")
+else if (alien_color_q25 == "red")
 	console.log("The player has just earned 15 points!");
 
 console.log("Exercise # 28");
@@ -109,20 +109,21 @@ let age = 120;
 // • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
 // • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 // • If the person is age 65 or older, print a message that the person is an elder.
-if (age < 2) console.log("person is a baby");
-else if (age >= 2 && age < 4) console.log("person is toddler");
-else if (age >= 4 && age < 13) console.log("person is a kid");
-else if (age >= 13 && age < 20) console.log("person is a teenager");
-else if (age >= 20 && age < 65) console.log("person is an adult");
+if (age_q28 < 2) console.log("person is a baby");
+else if (age_q28 >= 2 && age_q28 < 4) console.log("person is toddler");
+else if (age_q28 >= 4 && age_q28 < 13) console.log("person is a kid");
+else if (age_q28 >= 13 && age_q28 < 20) console.log("person is a teenager");
+else if (age_q28 >= 20 && age_q28 < 65) console.log("person is an adult");
 else console.log("person is an elder");
 
 console.log("Exercise # 29");
 // Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
 let favFruits: string[] = ["mango", "banana", "cherry", "strawberry", "apple"];
-console.log("my favourite fruits are " + favFruits);
+console.log("my favourite fruits are " + favFruits_q29);
 
-if (favFruits.includes("apple")) console.log("your array has apples!");
-if (favFruits.includes("pineapple")) console.log("your array has pineapples!");
+if (favFruits_q29.includes("apple")) console.log("your array has apples!");
+if (favFruits_q29.includes("pineapple"))
+	console.log("your array has pineapples!");
 else console.log("pineapples not found");
 
 // • Make a array of your three favorite fruits and call it favorite_fruits.
@@ -131,38 +132,38 @@ else console.log("pineapples not found");
 
 let fruitToBeFound = "mango";
 
-if (favFruits.find((fruit) => fruit == fruitToBeFound))
-	console.log(`you really like ${fruitToBeFound}!`);
-else console.log(`${fruitToBeFound} not found`);
+if (favFruits_q29.find((fruit) => fruit == fruitToBeFound_q29))
+	console.log(`you really like ${fruitToBeFound_q29}!`);
+else console.log(`${fruitToBeFound_q29} not found`);
 
-fruitToBeFound = "apple";
-if (favFruits.find((fruit) => fruit == fruitToBeFound))
-	console.log(`you really like ${fruitToBeFound}!`);
-else console.log(`${fruitToBeFound} not found`);
+fruitToBeFound_q29 = "apple";
+if (favFruits_q29.find((fruit) => fruit == fruitToBeFound_q29))
+	console.log(`you really like ${fruitToBeFound_q29}!`);
+else console.log(`${fruitToBeFound_q29} not found`);
 
-fruitToBeFound = "pineapple";
-if (favFruits.find((fruit) => fruit == fruitToBeFound))
-	console.log(`you really like ${fruitToBeFound}!`);
-else console.log(`${fruitToBeFound} not found`);
+fruitToBeFound_q29 = "pineapple";
+if (favFruits_q29.find((fruit) => fruit == fruitToBeFound_q29))
+	console.log(`you really like ${fruitToBeFound_q29}!`);
+else console.log(`${fruitToBeFound_q29} not found`);
 
-fruitToBeFound = "strawberry";
-if (favFruits.find((fruit) => fruit == fruitToBeFound))
-	console.log(`you really like ${fruitToBeFound}!`);
-else console.log(`${fruitToBeFound} not found`);
+fruitToBeFound_q29 = "strawberry";
+if (favFruits_q29.find((fruit) => fruit == fruitToBeFound_q29))
+	console.log(`you really like ${fruitToBeFound_q29}!`);
+else console.log(`${fruitToBeFound_q29} not found`);
 
-fruitToBeFound = "banana";
-if (favFruits.find((fruit) => fruit == fruitToBeFound))
-	console.log(`you really like ${fruitToBeFound}!`);
-else console.log(`${fruitToBeFound} not found`);
+fruitToBeFound_q29 = "banana";
+if (favFruits_q29.find((fruit) => fruit == fruitToBeFound_q29))
+	console.log(`you really like ${fruitToBeFound_q29}!`);
+else console.log(`${fruitToBeFound_q29} not found`);
 
 console.log("Exercise # 30");
 // Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
 let users: string[] = ["admin", "guest", "restricted", "viewer"];
-users.forEach((element) => {
+users_q30.forEach((element) => {
 	console.log(`Hi ${element}! welcome to our app`);
 });
 // • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
-users.forEach((element) => {
+users_q30.forEach((element) => {
 	if (element == "admin")
 		console.log(`Hi ${element}! would you like to see annual report?`);
 	else console.log("Thank you for logging in again!");
@@ -174,11 +175,11 @@ console.log("Exercise # 31");
 // No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
 // • If the list is empty, print the message We need to find some users!
 // • Remove all of the usernames from your array, and make sure the correct message is printed.
-let size = users.length;
+let size = users_q30.length;
 for (let i = 0; i < size; i++) {
-	users.pop();
+	users_q30.pop();
 }
-if (users.length == 0) console.log("We need to find some users!");
+if (users_q30.length == 0) console.log("We need to find some users!");
 
 console.log("Exercise 32");
 // Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.

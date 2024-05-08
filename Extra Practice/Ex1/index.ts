@@ -2,20 +2,22 @@
 
 // Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
 let person_name: string = "Bushra Attique";
-console.log(`Hello ${person_name}, would you like to learn some Python today?`);
+console.log(
+	`Hello ${person_name_q3}, would you like to learn some Python today?`
+);
 
 // Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
-let titleCase = person_name
+let titleCase = person_name_q3
 	.toLowerCase()
 	.replace(/\b\w/g, (s) => s.toUpperCase());
 
 console.log(
 	"Lower Case: " +
-		person_name.toLowerCase() +
+		person_name_q3.toLowerCase() +
 		"\nUpper Case:" +
-		person_name.toUpperCase() +
+		person_name_q3.toUpperCase() +
 		"\nTitle Case:" +
-		titleCase
+		titleCase_q3
 );
 
 // Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:
@@ -26,13 +28,13 @@ console.log(
 
 // Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
 let famousPerson = "Holy Prophet(PBUH)",
-	message = `${famousPerson} said "Seek knowledge from cradle to grave."`;
-console.log(message);
+	message = `${famousPerson_q5} said "Seek knowledge from cradle to grave."`;
+console.log(message_q5);
 
 // Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
-person_name = "\t\n\t\tBushra Attique\t\n";
+person_name_q3 = "\t\n\t\tBushra Attique\t\n";
 console.log(
-	`Name with white spaces = [${person_name}] and without whitespaces= ${person_name.trim()} `
+	`Name with white spaces = [${person_name_q3}] and without whitespaces= ${person_name_q3.trim()} `
 );
 
 // Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.// You should create four lines that look like this:
@@ -45,7 +47,7 @@ console.log(16 / 2);
 
 // Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
 let favNum = 7;
-console.log(`My favourite number is ${favNum}`);
+console.log(`My favourite number is ${favNum_q9}`);
 
 // Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
 
@@ -89,7 +91,7 @@ examples.forEach((example: string) => {
 
 // Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 const favPeople = ["Attique", "Mamoona", "Zunash"];
-favPeople.forEach((element) => {
+favPeople_q15.forEach((element) => {
 	console.log(
 		`Hi ${element}!  I'm hosting a dinner tonight and would love to have you join us. Venue:Huqa Pani 9 pm`
 	);
@@ -104,11 +106,11 @@ favPeople.forEach((element) => {
 // • Print a second set of invitation messages, one for each person who is still in your list.
 
 console.log(
-	`${favPeople[0]} can't attend the dinner because he if out of country`
+	`${favPeople_q15[0]} can't attend the dinner because he if out of country`
 );
-let index = favPeople.findIndex((person) => person === "Attique");
-favPeople[index] = "Nazia";
-favPeople.forEach((element) => {
+let index = favPeople_q15.findIndex((person) => person === "Attique");
+favPeople_q15[index_q15] = "Nazia";
+favPeople_q15.forEach((element) => {
 	console.log(
 		`Hi ${element}!  I'm hosting a dinner tonight and would love to have you join us. Venue:Huqa Pani 9 pm`
 	);
@@ -118,14 +120,14 @@ favPeople.forEach((element) => {
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
 console.log("Wow!More space wis available so we can call some more guestes!");
 // • Add one new guest to the beginning of your array.
-favPeople.unshift("Hafsa");
+favPeople_q15.unshift("Hafsa");
 // • Add one new guest to the middle of your array.
-index = Math.ceil(favPeople.length / 2);
-favPeople[index - 1] = "Safeera";
+index_q15 = Math.ceil(favPeople_q15.length / 2);
+favPeople_q15[index_q15 - 1] = "Safeera";
 //• Use append() to add one new guest to the end of your list.
-favPeople.push("Asma");
+favPeople_q15.push("Asma");
 //• Print a new set of invitation messages, one for each person in your list.
-favPeople.forEach((element) => {
+favPeople_q15.forEach((element) => {
 	console.log(
 		`Hi ${element}!  I'm hosting a dinner tonight and would love to have you join us. Venue:Huqa Pani 9 pm`
 	);
@@ -134,23 +136,25 @@ favPeople.forEach((element) => {
 // • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
 console.log("Oops! I can only invite 2 people now.");
 // • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
-favPeople.forEach((element) => {
-	if (favPeople.length > 2)
-		console.log(`I am sorry ${favPeople.pop()}! I can’t invite you to dinner.`);
+favPeople_q15.forEach((element) => {
+	if (favPeople_q15.length > 2)
+		console.log(
+			`I am sorry ${favPeople_q15.pop()}! I can’t invite you to dinner.`
+		);
 });
 
 // • Print a message to each of the two people still on your list, letting them know they’re still invited.
-favPeople.forEach((element) => {
+favPeople_q15.forEach((element) => {
 	console.log(
 		`Hi ${element}!  I'm hosting a dinner tonight and you are still invited. Venue:Huqa Pani 9 pm`
 	);
 });
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
-index = favPeople.length;
-for (let i = 0; i < index; i++) {
-	console.log(favPeople.pop());
+index_q15 = favPeople_q15.length;
+for (let i = 0; i < index_q15; i++) {
+	console.log(favPeople_q15.pop());
 }
-console.log(favPeople);
+console.log(favPeople_q15);
 
 //18
 
@@ -158,10 +162,10 @@ console.log(favPeople);
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
 const favPlaces = ["Makkah", "Madina", "Baltistan", "Turkey", "Yemen"];
 // • Print your array in its original order.
-console.log(favPlaces);
+console.log(favPlaces_q18);
 
 // • Print your array in alphabetical order without modifying the actual list.
-console.log("Through copy method.", favPlaces.concat().sort());
+console.log("Through copy method.", favPlaces_q18.concat().sort());
 
 //second method
 
@@ -172,73 +176,73 @@ let asciiLower = 97,
 	asciiUpper = 65;
 
 do {
-	favPlaces.forEach((element) => {
+	favPlaces_q18.forEach((element) => {
 		if (
-			element.charAt(0) == String.fromCharCode(asciiLower) ||
-			element.charAt(0) == String.fromCharCode(asciiUpper)
+			element.charAt(0) == String.fromCharCode(asciiLower_q18) ||
+			element.charAt(0) == String.fromCharCode(asciiUpper_q18)
 		) {
 			console.log(element);
 		}
 	});
-	asciiLower++;
-	asciiUpper++;
-} while (asciiLower < 123 && asciiUpper < 90);
+	asciiLower_q18++;
+	asciiUpper_q18++;
+} while (asciiLower_q18 < 123 && asciiUpper_q18 < 90);
 
 // • Show that your array is still in its original order by printing it.
-console.log(favPlaces);
+console.log(favPlaces_q18);
 
 // • Print your array in reverse alphabetical order without changing the order of the original list.
 console.log("Printing in reverse order:");
 
-asciiLower = 122;
-asciiUpper = 90;
+asciiLower_q18 = 122;
+asciiUpper_q18 = 90;
 
 do {
-	favPlaces.forEach((element) => {
+	favPlaces_q18.forEach((element) => {
 		if (
-			element.charAt(0) == String.fromCharCode(asciiLower) ||
-			element.charAt(0) == String.fromCharCode(asciiUpper)
+			element.charAt(0) == String.fromCharCode(asciiLower_q18) ||
+			element.charAt(0) == String.fromCharCode(asciiUpper_q18)
 		) {
 			console.log(element);
 		}
 	});
-	asciiLower--;
-	asciiUpper--;
-} while (asciiLower > 96 && asciiUpper > 64);
+	asciiLower_q18--;
+	asciiUpper_q18--;
+} while (asciiLower_q18 > 96 && asciiUpper_q18 > 64);
 
 // • Show that your array is still in its original order by printing it again.
-console.log("Original Array:", favPlaces);
+console.log("Original Array:", favPlaces_q18);
 
 // • Reverse the order of your list. Print the array to show that its order has changed.
-favPlaces.reverse();
-console.log("Array in reverse order permanently:", favPlaces);
+favPlaces_q18.reverse();
+console.log("Array in reverse order permanently:", favPlaces_q18);
 
 // • Reverse the order of your list again. Print the list to show it’s back to its original order.
-favPlaces.reverse();
-console.log("Array in original order by reversing again:", favPlaces);
+favPlaces_q18.reverse();
+console.log("Array in original order by reversing again:", favPlaces_q18);
 
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
-favPlaces.sort();
-console.log("Sorted permanently changed array:", favPlaces);
+favPlaces_q18.sort();
+console.log("Sorted permanently changed array:", favPlaces_q18);
 
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-favPlaces.sort((one, two) => (one < two ? 1 : -1));
+favPlaces_q18.sort((one, two) => (one < two ? 1 : -1));
 //number with higher values come before
-console.log("Array reversed using sort method:", favPlaces);
+console.log("Array reversed using sort method:", favPlaces_q18);
 
 //19
 //Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
-favPeople.push("Mamoona");
-favPeople.push("Hafsa");
-console.log(`${favPeople.length} are invited to dinner.`);
+favPeople_q15.push("Mamoona");
+favPeople_q15.push("Hafsa");
+console.log(`${favPeople_q15.length} are invited to dinner.`);
 
 // 20
 //Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these
 //items.
 let tempList: string[] = [];
-tempList.push("Ravi");
-tempList.push("Beas");
-tempList.push("Chenab");
+tempList_q20.push("Ravi");
+tempList_q20.push("Beas");
+tempList_q20.push("Chenab");
 
 //21
 // They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
@@ -256,7 +260,7 @@ console.log(
 
 // Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program
 let arr: number[] = [1, 2, 3];
-console.log(arr[4]); //error never raises, it just print undefined without throwing error
+console.log(arr_q22[4]); //error never raises, it just print undefined without throwing error
 
 // //23
 // Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
@@ -272,10 +276,10 @@ let num1 = 5,
 	num2 = 6,
 	str1 = "Pakistan",
 	str2 = "pakistan",
-	add = num1 + num2;
+	add = num1_q23 + num2_q23;
 
 console.log("Is num1 =num2? I predict false");
-console.log(num1 == num2);
+console.log(num1_q23 == num2_q23);
 
 console.log("Is str1=Paksitan? I predict fasle");
 console.log(str1 == "pakistan");
@@ -284,22 +288,22 @@ console.log("Is str1=Paksitan? I predict true");
 console.log(str1 == "Pakistan");
 
 console.log("Is str2=Paksitan? I predict fasle");
-console.log(str2 == "Pakistan");
+console.log(str2_q23 == "Pakistan");
 
 console.log("Is num1>5? I predict fasle");
-console.log(num1 > 5);
+console.log(num1_q23 > 5);
 
 console.log("Is num1<num2? I predict true");
-console.log(num1 < num2);
+console.log(num1_q23 < num2_q23);
 
 console.log("Is num2<num1? I predict false");
-console.log(num2 < num1);
+console.log(num2_q23 < num1_q23);
 
 console.log("Is num1=5? I predict true");
-console.log(num1 == 5);
+console.log(num1_q23 == 5);
 
 console.log("Is num2==6? I predict true");
-console.log(num2 == 6);
+console.log(num2_q23 == 6);
 
 console.log("Is add>10? I predict true");
-console.log(add > 10);
+console.log(add_q23 > 10);
