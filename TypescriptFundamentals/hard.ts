@@ -1,13 +1,17 @@
 import inquirer from "inquirer";
 // Develop a function that takes two inputs, a string and a character, and returns the number of times the character appears in the string.
 function charCountInString(str: string, char: string) {
-//str.match(char)?.length;
+	//str.match(char)?.length;
+	let reg: RegExp = new RegExp("\\" + char, "g");
+
 	console.log(
 		`The letter "${char}" appeared in string "my name is bushra what is your name"  ${
-			str.length} times`
+			str.match(reg)?.length
+		}"
+		)} times`
 	);
 }
-charCountInString("my name is bushra what is your name", "i");
+charCountInString("my name is bushra what is yiour inameiii", "i");
 // Create a 'to-do list' array of objects where each object has properties task and completed (a boolean). Write a function to log only the tasks that are not yet completed.
 interface Tasks {
 	task: string;
