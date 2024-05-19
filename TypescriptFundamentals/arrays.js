@@ -108,6 +108,7 @@ console.log(isExist1(arrayTemp, "bushra"));
 function findSmallest(arr) {
     arr.sort();
     return arr[0];
+    //or return Math.min(...arr);
 }
 console.log("smallest number in [4,5,6,3,2,0,-1] is:", findSmallest([4, 5, 6, 3, 2, 0, -1]));
 //method 2

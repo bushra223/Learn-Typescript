@@ -1,12 +1,10 @@
 import inquirer from "inquirer";
 // Develop a function that takes two inputs, a string and a character, and returns the number of times the character appears in the string.
 function charCountInString(str, char) {
-    let counter = 0;
-    //str.match((/\b\w/g, (s) => s.toUpperCase());
-    let matches = str.match(/a/g);
-    console.log(`The letter "${char}" appeared in string "my name is bushra" ${matches === null || matches === void 0 ? void 0 : matches.length} times`);
+    //str.match(char)?.length;
+    console.log(`The letter "${char}" appeared in string "my name is bushra what is your name"  ${str.match(char)?.length} times`);
 }
-charCountInString("my name is bushra", "a");
+charCountInString("my name is bushra what is your name", "i");
 let arrayOfObjects = [
     { task: "lunch", isCompleted: true },
     { task: "washedDishes", isCompleted: false },

@@ -3,6 +3,7 @@ function calculateProducts(arr: number[]): number {
 	let product: number = 1; //so that array should not be zero when multiplied;
 	for (let i = 0; i < arr.length; ++i) product *= arr[i];
 	return product;
+	// return arr.reduce((acc, num) => acc * num, 1);
 }
 console.log(
 	`\n\t\tproduct of array elements in [4,3,2]=${calculateProducts([4, 3, 2])}`
@@ -106,6 +107,20 @@ function formatNames(arr: string[]): string {
 }
 console.log(formatNames(["Anas", "Attique", "Bushra", "Bilal"]));
 
+//or
+
+// function formatNames(names: string[]): string {
+// 	if (names.length < 2) {
+// 		let arr = names.join("");
+// 		console.log("hi", arr);
+
+// 		return arr;
+// 	}
+// -1 means "end at the second-to-last element" (index names.length - 1).
+// So, this slice excludes the last element of the original array.
+// 	return `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+// }
+
 // Develop a function that converts an array of Fahrenheit temperatures to Celsius and logs the new temperatures.
 function FahrenheitToCelsius(arr: number[]) {
 	console.log(
@@ -133,7 +148,20 @@ function minMaxAverage(arr: number[]): OBJ {
 	return obj;
 }
 console.log(minMaxAverage([5, 3, 2, 1.0]));
-
+//or
+/*
+function minMaxAverage(numbers: number[]): {
+      min: number;
+      max: number;
+      average: number;
+    } {
+      const min = Math.min(...numbers);
+      const max = Math.max(...numbers);
+      const average =
+        numbers.reduce((sum, current) => sum + current, 0) / numbers.length;
+      return { min, max, average };
+    }
+	*/
 // Create a function swapElements that swaps two specified indices in an array.
 function swapElements(arr: any[], index1: number, index2: number): any[] {
 	let temp: any = arr[index2];
@@ -142,7 +170,6 @@ function swapElements(arr: any[], index1: number, index2: number): any[] {
 	return arr;
 }
 console.log(swapElements([7, 6, 4, 90, 0, 9, 6, 5, 4, 3], 3, 0));
-let fname={};
-fname=56;
+let fname = {};
+fname = 56;
 console.log(fname);
-

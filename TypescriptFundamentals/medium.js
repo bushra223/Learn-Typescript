@@ -14,12 +14,11 @@ for (let i = 1; i <= 50; ++i) {
 }
 // Define an array temperatures with at least five different temperatures (numbers). Write a script to find and log the highest temperature.
 let temperature = [20, 30, 35, 15, -1];
-let max = temperature[0];
-for (let i = 1; i < temperature.length; ++i) {
-    if (max < temperature[i])
-        max = temperature[i];
-}
-console.log(`Max temp among ${temperature} is :${max}`);
+// let max: number = temperature[0];
+// for (let i = 1; i < temperature.length; ++i) {
+// 	if (max < temperature[i]) max = temperature[i];
+// }
+// console.log(`Max temp among ${temperature} is :${max}`);
 //using built in function
 temperature.sort();
 console.log(`Max temp among ${temperature} is :${temperature[temperature.length - 1]}`);

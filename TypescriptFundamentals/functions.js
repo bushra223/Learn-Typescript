@@ -4,6 +4,7 @@ function calculateProducts(arr) {
     for (let i = 0; i < arr.length; ++i)
         product *= arr[i];
     return product;
+    // return arr.reduce((acc, num) => acc * num, 1);
 }
 console.log(`\n\t\tproduct of array elements in [4,3,2]=${calculateProducts([4, 3, 2])}`);
 // Develop a function filterByLength that takes an array of strings and a number n. The function should return an array containing only the strings that are longer than n characters.
@@ -29,7 +30,7 @@ console.log(`\nfilterBylength on array [apple,banana,grapes,kiwi,avocado,pomegra
 ], 5)}`);
 // Create a function findDuplicates that finds and logs all duplicates in an array.
 function findDuplicates(arr) {
-    //arrTemp keeps record of all the indices of dulicate items in arr
+    //arrTemp keeps record of all the indices of duplicate items in arr
     let arrTemp = [];
     console.log("original array", arr);
     console.log("\n\t\tduplicates are:");
@@ -88,6 +89,17 @@ function formatNames(arr) {
     return formattedString;
 }
 console.log(formatNames(["Anas", "Attique", "Bushra", "Bilal"]));
+//or
+// function formatNames(names: string[]): string {
+// 	if (names.length < 2) {
+// 		let arr = names.join("");
+// 		console.log("hi", arr);
+// 		return arr;
+// 	}
+// -1 means "end at the second-to-last element" (index names.length - 1).
+// So, this slice excludes the last element of the original array.
+// 	return `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+// }
 // Develop a function that converts an array of Fahrenheit temperatures to Celsius and logs the new temperatures.
 function FahrenheitToCelsius(arr) {
     console.log(arr.map((element) => (element = Number(((element - 32) * (5 / 9)).toFixed(2)))));
@@ -107,6 +119,20 @@ function minMaxAverage(arr) {
     return obj;
 }
 console.log(minMaxAverage([5, 3, 2, 1.0]));
+//or
+/*
+function minMaxAverage(numbers: number[]): {
+      min: number;
+      max: number;
+      average: number;
+    } {
+      const min = Math.min(...numbers);
+      const max = Math.max(...numbers);
+      const average =
+        numbers.reduce((sum, current) => sum + current, 0) / numbers.length;
+      return { min, max, average };
+    }
+    */
 // Create a function swapElements that swaps two specified indices in an array.
 function swapElements(arr, index1, index2) {
     let temp = arr[index2];
