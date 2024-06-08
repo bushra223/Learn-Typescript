@@ -1,17 +1,24 @@
 // More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
-const favPeople_q16: string[] = ["Attique", "Mamoona", "Zunash"];
-console.log("Wow!More space wis available so we can call some more guestes!");
+import { favPeople1 } from "./Q15.js";
+
+console.log("Q16:Wow!More space is available so we can call some more guestes!");
 // • Add one new guest to the beginning of your array.
-favPeople_q16.unshift("Hafsa");
+favPeople1.unshift("Hafsa");
+
+
 // • Add one new guest to the middle of your array.
-let index_q16 = Math.ceil(favPeople_q16.length / 2);
-favPeople_q16[index_q16 - 1] = "Safeera";
+let index_q16 = Math.floor(favPeople1.length / 2);
+
+
+favPeople1.splice(index_q16, 0, "Safeera");
+
 //• Use append() to add one new guest to the end of your list.
-favPeople_q16.push("Asma");
+favPeople1.push("Asma");
 //• Print a new set of invitation messages, one for each person in your list.
-favPeople_q16.forEach((element) => {
+favPeople1.forEach((element) => {
 	console.log(
 		`Hi ${element}!  I'm hosting a dinner tonight and would love to have you join us. Venue:Huqa Pani 9 pm`
 	);
 });
+export {favPeople1};

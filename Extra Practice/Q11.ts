@@ -3,3 +3,5 @@
 let names_q11: string[] = ["Zunash", "Mamoona", "Zahra"];
 
 console.log(`\n${names_q11[0]}, ${names_q11[1]}, ${names_q11[2]}`);
+
+export {names_q11}

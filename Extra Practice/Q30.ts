@@ -12,3 +12,4 @@ users_q30.forEach((element) => {
 });
 
 // • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+export {users_q30};

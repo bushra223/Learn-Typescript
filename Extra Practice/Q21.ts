@@ -4,19 +4,18 @@ type Rivers = {
 	city: string;
 	river: string;
 };
+function createObject(city: string, river: string): Rivers {
+	return {
+        city: city,
+        river: river,
+    };
+    // return { city: city, river: river };
+    // return { city, river };
+    // return { city: city, river: river };
+}
+const obj1=createObject("Lahore","Ravi");
+const obj2=createObject("Jalandhar","Beas");
+const obj3=createObject("Bahawalpur","Chenab");
 
-let lahore: Rivers = {
-	city: "Lahore",
-	river: "Ravi",
-};
-let jalandharDistrict: Rivers = {
-	city: "JalandharDistrict",
-	river: "Beas",
-};
 
-let bahawalpur: Rivers = {
-	city: "Bahawalpur",
-	river: "Chenab",
-};
-
-console.log(lahore,jalandharDistrict,bahawalpur);
+console.log(obj1,obj2,obj3);

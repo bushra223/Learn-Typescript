@@ -5,3 +5,4 @@ favPeople1.forEach((element) => {
 		`Hi ${element}!  I'm hosting a dinner tonight and would love to have you join us. Venue:Huqa Pani 9 pm`
 	);
 });
+export { favPeople1 };
