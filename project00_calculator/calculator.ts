@@ -1,4 +1,6 @@
+#! /usr/bin/env node
 //Modules are basically scripts written in separate files.
+
 import { addition } from "./addition.js";
 import { subtraction } from "./subtraction.js";
 import { division } from "./division.js";
@@ -7,7 +9,7 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 
 let flag = false;
-while (flag == false) {
+while (flag = = false) {
 	let answer = await inquirer.prompt([
 		{
 			name: "number1",
