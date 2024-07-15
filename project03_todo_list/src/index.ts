@@ -8,7 +8,7 @@ while (flag == 0) {
     {
       name: "task",
       type: "list",
-      message: "What do you want to do?",
+      message: "What do yout want to do?",
       choices: ["Add task", "Remove task", "Update task", "Quit"],
     },
   ]);

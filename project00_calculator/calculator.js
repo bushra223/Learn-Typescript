@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 //Modules are basically scripts written in separate files.
 import { addition } from "./addition.js";
 import { subtraction } from "./subtraction.js";
