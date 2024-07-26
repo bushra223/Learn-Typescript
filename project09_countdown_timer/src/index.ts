@@ -49,9 +49,6 @@ let stoppingTime = new Date(
   currentTime.getSeconds() + Number(answer.sec)
 );
 
-console.log("current milliseconds: " + currentTime);
-console.log("stopping milliseconds:" + stoppingTime);
-
 let calculateCountdown = () => {
   let current = new Date();
   let remainingTime = stoppingTime.getTime() - current.getTime();

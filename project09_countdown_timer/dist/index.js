@@ -35,8 +35,6 @@ const answer = await inquirer.prompt([
 console.log(`Your countdown timer has set to ${answer.hours} hours:${answer.min} minutes:${answer.sec} seconds`);
 let currentTime = new Date();
 let stoppingTime = new Date(2024, 7, 2, currentTime.getHours() + Number(answer.hours), currentTime.getMinutes() + Number(answer.min), currentTime.getSeconds() + Number(answer.sec));
-console.log("current milliseconds: " + currentTime);
-console.log("stopping milliseconds:" + stoppingTime);
 let calculateCountdown = () => {
     let current = new Date();
     let remainingTime = stoppingTime.getTime() - current.getTime();
@@ -49,6 +47,6 @@ let calculateCountdown = () => {
         return;
     }
     else
-        console.log(`${remainingHours} H: ${remainingMinutes} M: ${remainingSeconds} S`);
+        console.log(`${remainingHours} Hour: ${remainingMinutes} Min: ${remainingSeconds} Sec`);
 };
 let timer = setInterval(calculateCountdown, 1000);

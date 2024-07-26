@@ -1,5 +1,4 @@
 import inquirer from "inquirer";
-//below is an array of objects...each object has further an array of objects containing cnversion rates of that currency
 const currencies = {
     USD: 1, // base currency
     EUR: 0.92,
@@ -36,6 +35,6 @@ else if (selection.convertFrom == "USD") {
 }
 else {
     const conversionRate = selection.amount / currencies[selection.convertFrom];
-    console.log(conversionRate);
+    //console.log(conversionRate);
     console.log(`Amount from ${selection.convertFrom} to ${selection.convertTo}= ${(currencies[selection.convertTo] * conversionRate).toFixed(2)} `);
 }
